@@ -1,0 +1,65 @@
+# Jirav
+
+> Jirav is a financial planning and analysis (FP&A) platform for growth companies and for
+> accounting and CFO advisory firms — reporting, dashboards, budgeting, forecasting, scenario
+> modeling and workforce planning in one hosted web application.
+
+Generated: 2026-08-23
+Method: generated (Jirav does not publish an llms.txt; probed https://www.jirav.com/llms.txt -> 404,
+https://app.jirav.com/llms.txt -> 404, https://help.jirav.com/llms.txt -> 301)
+Source: API Evangelist profile of Jirav's public surface — https://github.com/api-evangelist/jirav
+
+## What an agent needs to know first
+
+Jirav has **no public API**. There is no developer portal, no API reference, no OpenAPI /
+AsyncAPI / GraphQL / SOAP contract, no SDK in any package registry, no CLI, no webhooks, no
+MCP server, and no A2A agent card. Every "integration" Jirav markets is an inbound, one-way
+connector that Jirav operates *against another vendor's* API to pull the customer's actuals in.
+Nothing can be programmatically read out of, or written into, Jirav by a third party.
+
+An agent asked to "call the Jirav API" should stop here and say so.
+
+## Product
+
+- Reporting, dashboards and KPIs over imported financial actuals
+- Planning, budgeting and rolling forecasts, including three-way pro forma financials
+  (income statement, balance sheet, cash flow)
+- Workforce/staffing planning and driver-based models
+- Scenario comparison and auto-forecast
+- White-labeled report packages for accounting and CFO advisory firms
+
+## Integrations (inbound connectors Jirav operates, not APIs Jirav exposes)
+
+- Accounting/GL: QuickBooks Online, QuickBooks Desktop, Xero, Oracle NetSuite, Sage Intacct
+- Payroll/HR: Gusto, Paychex Flex, ADP RUN, BambooHR, Paylocity, TriNet, Justworks, UKG Ready
+- Files: Excel and Google Sheets uploads, custom line and custom table imports
+- SSO/sign-in: Google, Microsoft, Xero
+- Constraints Jirav publishes: one accounting system per account, single currency, one-way
+  import only (Jirav never writes back), and the accounting connection cannot be changed by
+  the customer without a support ticket
+  — https://help.jirav.com/actuals/integration-capabilities
+
+## Links
+
+- Website: https://www.jirav.com/
+- Product overview: https://www.jirav.com/product
+- Help center (product documentation): https://help.jirav.com/
+- Support portal: https://help.jirav.com/support-portal
+- Release notes (product changelog, YY.MM, latest 26.02): https://help.jirav.com/release-notes
+- Pricing, businesses: https://www.jirav.com/business-pricing
+- Pricing, accounting/CFO advisory wholesale: https://www.jirav.com/pricing
+- Sign in: https://app.jirav.com/
+- Blog: https://www.jirav.com/blog
+- Terms of use: https://www.jirav.com/terms-of-use
+- Privacy policy: https://www.jirav.com/privacy-policy
+- Contact: info@jirav.com
+
+## Absences verified on 2026-08-23 (do not assume otherwise)
+
+- No status page (https://status.jirav.com does not resolve; https://jirav.statuspage.io is
+  Atlassian's Statuspage marketing page, not a Jirav status page)
+- No security.txt, no /.well-known document of any kind on any Jirav host
+- No trust center, no published SOC 2 / ISO 27001 / PCI / HIPAA certification claim
+- No GitHub organization; no npm, PyPI or RubyGems package
+- No public Postman workspace or collection
+- No deprecation policy, no SLA, no roadmap page

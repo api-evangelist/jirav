@@ -1,0 +1,32 @@
+generated: '2026-08-23'
+method: searched
+source: >-
+  registry searches of npm, PyPI, RubyGems, plus GitHub org and repository search, 2026-08-23
+note: >-
+  No first-party Jirav client library exists in any public registry. Searched npm
+  (registry.npmjs.org text search "jirav" -> 0 results), PyPI (pypi.org/pypi/jirav/json -> 404),
+  RubyGems (rubygems.org/api/v1/gems/jirav.json -> 404), and GitHub (api.github.com/orgs/jirav
+  -> 404; repository search for "jirav" returns 65 unrelated repos, all Jira-tooling name
+  collisions plus two empty personal repos and a third-party "Jirav ROI Calculator"). Jirav
+  publishes no public API, so there is nothing for an SDK to wrap. No SDKs pointer is emitted.
+package_count: 0
+official_package_count: 0
+packages: []
+registries_searched:
+- registry: npm
+  query: https://registry.npmjs.org/-/v1/search?text=jirav
+  status: 200
+  results: 0
+- registry: pypi
+  query: https://pypi.org/pypi/jirav/json
+  status: 404
+  results: 0
+- registry: rubygems
+  query: https://rubygems.org/api/v1/gems/jirav.json
+  status: 404
+  results: 0
+- registry: github
+  query: https://api.github.com/orgs/jirav
+  status: 404
+  results: 0
+  note: no Jirav GitHub organization exists

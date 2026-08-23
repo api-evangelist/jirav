@@ -1,0 +1,56 @@
+generated: '2026-08-23'
+method: searched
+source: https://help.jirav.com/release-notes
+note: >-
+  Lifecycle posture assembled from Jirav's own public pages. Jirav is an end-user SaaS product
+  with no public API, so the API-facing halves of this artifact (versioning policy, deprecation
+  policy, Sunset/Deprecation headers, breaking-change notice period) do not exist to be recorded.
+  Every field below is either observed or an explicit, probed absence.
+versioning:
+  api_versioning: null
+  api_versioning_note: No public API, therefore no published API versioning policy.
+  product_versioning: calendar-version (YY.MM), published in the help-center release notes
+  current_product_version: '26.02'
+deprecation:
+  policy_published: false
+  policy_url: null
+  sunset_header: false
+  deprecation_header: false
+  rfc_8594: false
+  note: >-
+    No deprecation or end-of-life policy is published on jirav.com or help.jirav.com. The
+    help center does carry a permanence constraint on the accounting integration: once an
+    accounting-system connection is established a customer cannot disconnect it and connect a
+    different accounting system without opening a support ticket
+    (https://help.jirav.com/actuals/integration-capabilities).
+status_page:
+  published: false
+  url: null
+  probed:
+  - url: https://status.jirav.com/
+    status: 0
+    result: DNS does not resolve
+  - url: https://jirav.statuspage.io/
+    status: 200
+    result: >-
+      soft hit — resolves to Atlassian's Statuspage marketing page (title
+      "Real-Time Incident Communication with Statuspage | Atlassian"), not a Jirav status page
+  note: >-
+    No status page. The jirav.statuspage.io 200 is the classic Statuspage catch-all and is
+    recorded as an absence, so no StatusPage pointer is emitted.
+sla:
+  published: false
+  url: null
+  note: No public SLA document; terms of use at https://www.jirav.com/terms-of-use carry no uptime commitment.
+support:
+  channels:
+  - type: help-center
+    url: https://help.jirav.com/
+  - type: support-portal
+    url: https://help.jirav.com/support-portal
+  - type: ticket
+    url: https://help.jirav.com/kb-tickets/new
+  - type: email
+    url: mailto:info@jirav.com
+  tiers_by_plan: Basic (Starter), Advanced (Professional), Premium (Enterprise)
+deprecated_operations: []

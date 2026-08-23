@@ -1,0 +1,51 @@
+generated: '2026-08-23'
+method: searched
+source: https://help.jirav.com/release-notes
+docs: https://help.jirav.com/release-notes
+note: >-
+  Jirav publishes product release notes in its HubSpot help center, split into one page per
+  calendar year and grouped by month with a YY.MM version number. These are END-USER product
+  release notes for the web application — Jirav publishes no API, so there is no API changelog,
+  no breaking-change policy, and no deprecation notices. The index page is labelled
+  "Updated thru February" as of 2026-08-23, so the 2026 page has not been refreshed in roughly
+  six months. Entries below are the most recent published release, transcribed verbatim in
+  substance from the 2026 page.
+scheme: calendar-version
+version_format: YY.MM
+current_version: '26.02'
+cadence: monthly (stated); 2026 page last updated through February
+pages:
+- year: 2026
+  url: https://help.jirav.com/release-notes-2026-updated
+  status: 200
+  label: Release Notes - 2026 (Updated thru February)
+- year: 2025
+  url: https://help.jirav.com/release-notes-2025-updated
+  status: 200
+- year: 2024
+  url: https://help.jirav.com/release-notes-2024
+  status: 200
+- year: 2023
+  url: https://help.jirav.com/release-notes-2023
+  status: 200
+entries:
+- version: '26.02'
+  date: '2026-02'
+  breaking: false
+  source: https://help.jirav.com/release-notes-2026-updated
+  additions:
+  - Include $ or % on data labels in tiles — toggle the data symbol to show whether numbers are currency or percentage
+  - Match overlay line axis with left axis on bar tiles via a "Unified Overlay Axis" toggle
+  - Drill down to department details and edit manual inputs from the aggregated department level
+  - Ability to distinguish billable vs non-billable accounts in the partner portal
+  changes:
+  - >-
+    Report naming conventions renamed for more commonly recognized terms: Template to Package,
+    Element/Section to Report, Report Settings to Package Settings, Default Reports to System Reports
+  - >-
+    A newly created Jirav account now displays the first package first instead of the Default
+    Reports package; subsequent visits still default to the last viewed package
+  highlights: Reporting terminology rename plus tile formatting and partner-portal billing designations
+api_changelog:
+  published: false
+  note: No API changelog exists because Jirav publishes no public API.

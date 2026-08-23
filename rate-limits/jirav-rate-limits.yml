@@ -1,0 +1,16 @@
+generated: '2026-08-23'
+method: searched
+source: https://help.jirav.com/
+note: >-
+  No rate limits are published, because Jirav publishes no public API. The help center and
+  marketing site document no request quotas, throttling behavior, X-RateLimit-*/RateLimit-*
+  response headers, Retry-After semantics, or 429 handling. The only quantitative ceilings
+  Jirav publishes are per-plan product limits (users, dashboards, departments, custom tables,
+  model duration) and those are recorded in plans/jirav-plans-pricing.yml, not here. An honest
+  zero — no RateLimits pointer is emitted, because there is no rate-limit surface to point at.
+applicability: not-applicable
+applicability_reason: no public API surface
+limit_count: 0
+rate_limits: []
+response_headers: []
+exhaustion_status_code: null

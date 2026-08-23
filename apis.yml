@@ -1,17 +1,35 @@
 aid: jirav
 name: Jirav
-description: 'Jirav is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  Jirav is a financial planning and analysis (FP&A) platform for growth companies and for
+  accounting and CFO advisory firms, combining reporting, dashboards, budgeting, forecasting,
+  scenario modeling and workforce planning in a single hosted web application. It imports
+  actuals from accounting systems (QuickBooks Online, QuickBooks Desktop, Xero, Oracle NetSuite,
+  Sage Intacct) and from payroll and HR systems (Gusto, Paychex Flex, ADP RUN, BambooHR,
+  Paylocity, TriNet, Justworks, UKG Ready), plus Excel and Google Sheets uploads, then drives
+  three-way pro forma financials, budget-versus-actual analysis, KPI libraries and board-ready
+  report packages from that data. Jirav sells direct to finance teams and wholesale through an
+  accounting partner program. The integrations are one-way inbound connectors that Jirav
+  operates against other vendors' APIs; as of this profile Jirav publishes no developer program,
+  no public REST or GraphQL API, no SDK, and no webhook surface of its own.
 url: https://raw.githubusercontent.com/api-evangelist/jirav/refs/heads/main/apis.yml
+image: https://www.jirav.com/hubfs/header-logo.png
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
 specificationVersion: '0.20'
 created: '2026-08-23'
 modified: '2026-08-23'
 tags:
 - Company
+- Financial Planning
+- FP&A
+- Budgeting
+- Forecasting
+- Accounting
+- Reporting
+- Dashboards
+- Business Intelligence
+- SaaS
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +37,55 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/jirav-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://www.jirav.com/
+- type: Blog
+  url: https://www.jirav.com/blog
+- type: Pricing
+  url: https://www.jirav.com/pricing
+- type: Login
+  url: https://app.jirav.com/
+- type: TermsOfService
+  url: https://www.jirav.com/terms-of-use
+- type: PrivacyPolicy
+  url: https://www.jirav.com/privacy-policy
+- type: Support
+  url: https://help.jirav.com/support-portal
+- type: ReleaseNotes
+  url: https://help.jirav.com/release-notes
+- type: ChangeLog
+  url: changelog/jirav-changelog.yml
+- type: Plans
+  url: plans/jirav-plans-pricing.yml
+- type: Lifecycle
+  url: lifecycle/jirav-lifecycle.yml
+- type: LLMsTxt
+  url: llms/jirav-llms.txt
+
+x-enrichment:
+  date: '2026-08-23'
+  status: minimal
+  artifacts_added: 9
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Jirav ships FP&A software as an end-user web app only — every host was probed and the
+    company publishes no developer portal, no API reference and no contract of any kind; the
+    only REST surface, a /v1/* Spring Boot API, is the private backend of its own AngularJS
+    app at https://app.jirav.com/-/ and it is documented nowhere.
+  evidence:
+  - url: https://www.jirav.com/openapi.json
+    status: 404
+  - url: https://app.jirav.com/v3/api-docs
+    status: 404
+  - url: https://app.jirav.com/graphql
+    status: 404
+  - url: https://api.jirav.com/
+    status: 0
+  - url: https://help.jirav.com/integrations
+    status: 200
+  checked: '2026-08-23'

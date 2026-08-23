@@ -64,5 +64,10 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Jirav is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.nasdaqprivatemarket.com/
+Jirav is a financial planning and analysis (FP&A) platform for growth companies and for accounting and CFO advisory firms, combining reporting, dashboards, budgeting, forecasting, scenario modeling and workforce planning in a single hosted web application. It imports actuals from accounting systems (QuickBooks Online and Desktop, Xero, Oracle NetSuite, Sage Intacct) and payroll/HR systems (Gusto, Paychex Flex, ADP RUN, BambooHR, Paylocity, TriNet, Justworks, UKG Ready), then drives three-way pro forma financials, budget-versus-actual analysis, KPI libraries and board-ready report packages from that data.
+
+**Jirav publishes no public API.** Probed 2026-08-23: no developer portal, no API reference, no OpenAPI / AsyncAPI / GraphQL / WSDL contract, no SDK in any registry, no CLI, no webhooks, no MCP server, and no A2A agent card. The integrations Jirav markets are one-way inbound connectors Jirav operates against other vendors' APIs. This profile therefore records what Jirav does publish — pricing, product release notes, lifecycle and support posture, and domain security — plus the probed absences.
+
+- https://www.jirav.com/
+- https://help.jirav.com/
+- https://app.jirav.com/

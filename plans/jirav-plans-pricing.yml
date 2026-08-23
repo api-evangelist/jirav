@@ -1,0 +1,141 @@
+generated: '2026-08-23'
+method: searched
+source: https://www.jirav.com/business-pricing
+sources:
+- https://www.jirav.com/business-pricing
+- https://www.jirav.com/pricing
+note: >-
+  Jirav publishes two list-price pages, one per segment. The business page names annual list
+  prices; the accounting/CFO advisory page names wholesale monthly starting prices. Neither
+  page is an API price list — Jirav has no public API, so none of these tiers carry API call
+  quotas, and there is no metered/overage dimension published anywhere. Prices are quoted
+  verbatim from the pages as fetched 2026-08-23; every tier still routes through a
+  "Talk to an expert" / "Request Demo" motion rather than self-serve checkout.
+plan_count: 5
+currency: USD
+plans:
+- name: Starter
+  segment: small-and-medium-business
+  price: 10000
+  currency: USD
+  billing_period: year
+  price_display: $10,000/year
+  source: https://www.jirav.com/business-pricing
+  limits:
+    planning_level: company-level
+    departments: null
+    custom_tables: 2
+    active_plans: 2
+    archived_plans: 5
+    model_duration_months: 24
+    admin_editor_users: 2
+    read_only_users: unlimited
+    dashboards: 3
+    report_packages: 3
+  included:
+  - Pro forma three-way financials
+  - Budget vs. actuals
+  - Financial forecasting
+  - Cash flow projections
+  - Standard payroll and accounting/GL integrations
+  - Google Sheets / Excel uploads
+  - Basic support
+  overage: null
+- name: Professional
+  segment: small-and-medium-business
+  price: 15000
+  currency: USD
+  billing_period: year
+  price_display: $15,000/year
+  source: https://www.jirav.com/business-pricing
+  limits:
+    planning_level: departmental
+    departments: 5
+    custom_tables: 8
+    active_plans: 3
+    archived_plans: 10
+    model_duration_months: 48
+    admin_editor_users: 5
+    read_only_users: unlimited
+    dashboards: 8
+    report_packages: 8
+  included:
+  - Everything in Starter
+  - Departmental planning
+  - Workforce planning
+  - Custom data modeling
+  - Custom KPIs
+  - Advanced support
+  overage: null
+- name: Enterprise
+  segment: small-and-medium-business
+  price: null
+  currency: USD
+  billing_period: year
+  price_display: Contact us for quote
+  source: https://www.jirav.com/business-pricing
+  limits:
+    planning_level: departmental
+    departments: 15
+    custom_tables: 20
+    active_plans: 5
+    archived_plans: unlimited
+    model_duration_months: 84
+    admin_editor_users: 15
+    read_only_users: unlimited
+    dashboards: 16
+    report_packages: 16
+  included:
+  - Everything in Professional
+  - Long-range and complex planning
+  - Premium integrations
+  - Collaborative planning add-on capacity
+  - Premium support
+  - Customer Success Manager
+  overage: null
+- name: Controller Essentials
+  segment: accounting-and-cfo-advisory-wholesale
+  price: 50
+  currency: USD
+  billing_period: month
+  price_display: Starting at $50/mo
+  source: https://www.jirav.com/pricing
+  limits:
+    planning: Auto-generated intelligent budget
+    plans: 2
+    forecast_duration_years: 1
+    departments: company level or up to 50
+    end_client_admin_editor_users: 15
+    read_only_users: unlimited
+  included:
+  - Historical financials and workforce analytics
+  - KPIs and budget vs. actual analysis
+  - AI auto-forecast
+  - White labeling with firm logo
+  overage: null
+- name: CFO Enterprise
+  segment: accounting-and-cfo-advisory-wholesale
+  price: 150
+  currency: USD
+  billing_period: month
+  price_display: Starting at $150/mo
+  source: https://www.jirav.com/pricing
+  limits:
+    planning: Advanced with drivers, staffing and custom bottoms-up models
+    plans: 5
+    active_scenarios: 5
+    forecast_duration_years: 7
+    departments: company level or up to 50
+    end_client_admin_editor_users: 15
+    read_only_users: unlimited
+  included:
+  - Standard or custom budgets
+  - Long-range forecasts
+  - Workforce planning and bottoms-up scenario modeling
+  - White labeling with firm logo
+  overage: null
+api_pricing:
+  published: false
+  note: >-
+    No API call quotas, per-request pricing, or metered API dimension appears on either
+    pricing page, consistent with Jirav publishing no public API.
