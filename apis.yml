@@ -13,6 +13,17 @@ description: >-
   operates against other vendors' APIs; as of this profile Jirav publishes no developer program,
   no public REST or GraphQL API, no SDK, and no webhook surface of its own.
 url: https://raw.githubusercontent.com/api-evangelist/jirav/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://www.jirav.com/hubfs/header-logo.png
 x-type: company
 x-source: harvest:secondary-market
