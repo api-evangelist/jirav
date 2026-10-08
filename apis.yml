@@ -73,6 +73,8 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: RateLimits
+  url: rate-limits/jirav-rate-limits.yml
 - url: https://www.jirav.com/blog/rss.xml
   type: BlogRSS
 - type: DomainSecurity
